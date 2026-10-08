@@ -1,3 +1,26 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+:root[saved-theme="dark"] {
+  --bodyFont: "Source Sans Pro", sans-serif;
+}
+
+article h1,
+.page-title {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+a.internal {
+  background: transparent;           // removes the default pill look
+  border-bottom: 1px solid var(--secondary);
+  &:hover { color: var(--tertiary); }
+}
+
+blockquote {
+  border-left: 3px solid var(--secondary);
+}
+
+:root[saved-theme="dark"] .graph-outer {
+  border-color: var(--lightgray);
+}
