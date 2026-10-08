@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: torn-usunder.github.io
+  baseUrl: bloof-the-dragoat.github.io/torn-usunder
   ignorePatterns:
     - private
     - templates
