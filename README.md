@@ -10,9 +10,9 @@
 
 ## The Premise
 
-Bloof is a dragon-goat hybrid who escaped a laboratory as a child. They were turned into the host of **Wrath**, one of the seven Calamities. Now they are trying to live a normal life, support the adoptive mother who raised them, and keep their past hidden in a world that already distrusts dragon blood.
+Bloovrn Graymark (nicknamed Bloof) is a dragon-goat hybrid who escaped a laboratory as a child. They were turned into the host of **Wrath**, one of the seven Calamities. Now they are trying to live a normal life, support the adoptive mother who raised them, and keep their past hidden in a world that already distrusts dragon blood.
 
-Then the ancient leylines begin to stir. Gods, Apostles, corporations, and factions start searching for Calamity hosts. Bloof has to decide whether Wrath is a curse that made them a monster, or a power they can choose to use on their own terms.
+Then the ancient leylines begin to stir. Gods, Apostles, corporations, and factions start searching for Calamity hosts. Bloof has to decide whether Wrath is a curse that made them a monster, or a power they can choose to use on their own terms. Does it matter?
 
 ---
 

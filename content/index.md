@@ -1,16 +1,20 @@
----
-title: Torn Usunder
-description: A beastfolk world on the edge of calamity.
----
+<div class="hero">
+  <h1 class="hero-title">TORN USUNDER</h1>
+  <p class="hero-tag">A world of beastfolk, buried dragons, and seven forces that were never allowed to be gentle.</p>
+</div>
 
-> [!quote] 
-> THIS IS. ACCEPTABLE.
 
-# Torn Usunder
+
+# Overview
 
 *Seven Calamities. One choice that was never supposed to be theirs.*
 
-A story set in a beastfolk world between 2060 and 2100, where world-altering forces of nature live inside the people who carry them.
+*A dark fantasy beastfolk world that follows Bloovrn Graymark, a dragon-goat hybrid who escaped a laboratory as a child. They were turned into the host of Wrath, one of the seven Calamities. Now they are trying to live a normal life, support the adoptive mother who raised them, and keep their past hidden in a world that already distrusts dragon blood.*
+
+*However, as the ancient leylines begin to stir. Gods, Apostles, corporations, and factions start searching for Calamity hosts. Bloof has to decide whether Wrath is a curse that made them a monster, or a power they can choose to use on their own terms. Does it matter?*
+
+> [!quote] 
+> "THIS IS. ACCEPTABLE."
 
 ---
 

@@ -24,3 +24,113 @@ blockquote {
 :root[saved-theme="dark"] .graph-outer {
   border-color: var(--lightgray);
 }
+
+@media (prefers-reduced-motion: reduce) { //respect reduced motion
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes fadeUp { //page fade in
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+article { animation: fadeUp 0.6s ease-out both; }
+
+a.internal { //ember underline on links
+  background-image: linear-gradient(var(--secondary), var(--secondary));
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease, color 0.2s;
+}
+a.internal:hover { background-size: 100% 1px; color: var(--tertiary); }
+
+@keyframes pulseGlow { //slow heartbeat glow on site title
+  0%, 100% { text-shadow: 0 0 0 transparent; }
+  50%      { text-shadow: 0 0 12px var(--secondary); }
+}
+.page-title { animation: pulseGlow 6s ease-in-out infinite; }
+
+@keyframes drift { //drifting embers in the background
+  from { transform: translateY(0); opacity: 0; }
+  20%  { opacity: 0.5; }
+  to   { transform: translateY(-100vh); opacity: 0; }
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 0;
+  background-image:
+    radial-gradient(2px 2px at 20% 90%, var(--secondary), transparent),
+    radial-gradient(1.5px 1.5px at 60% 95%, var(--tertiary), transparent),
+    radial-gradient(2px 2px at 85% 92%, var(--secondary), transparent);
+  background-size: 100% 100%;
+  opacity: 0.35;
+  animation: drift 18s linear infinite;
+}
+
+.callout, .graph-outer { //graph and card hover lift
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.callout:hover, .graph-outer:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 0 14px rgba(224, 48, 60, 0.2);
+}
+
+body, .page, article, .sidebar { //theme-toggle crossfade
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+@keyframes heroShift { //Slow moving gradient banner
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero {
+  position: relative;
+  padding: 3.5rem 1.5rem;
+  margin: 0 0 2rem;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(120deg, #0b0809, #3a0a10, #8c1620, #2a0a0e, #0b0809);
+  background-size: 300% 300%;
+  animation: heroShift 30s ease-in-out infinite;
+  border: 1px solid var(--lightgray);
+}
+
+.hero-title {
+  margin: 0;
+  color: #f4ecec;
+  letter-spacing: 0.12em;
+}
+
+.hero-tag {
+  margin: 0.75rem 0 0;
+  color: #d9cfcf;
+  font-style: italic;
+}
+
+/* soft vignette so text stays readable */
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero { animation: none; }
+}
+body[data-slug="index"] {
+  .article-title,
+  .content-meta,
+  .page-properties,
+  .properties,
+  details.properties {
+    display: none;
+  }
+}
