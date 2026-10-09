@@ -27,7 +27,7 @@ But the past does not stay buried because someone wishes it would. And it has al
 > [!info] More chapters coming
 > New chapters will appear here as they are released.
 
-> [!Updates] "Chapter 1: Hold" coming soon!
+> [!Updates] "Chapter 1: Hold" coming soon!!
 
 
 ---
